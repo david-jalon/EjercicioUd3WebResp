@@ -67,6 +67,10 @@ main {
     margin-bottom: 20px;
 }
 
+#agenda th:hover{
+    background-color: #a1c6ea;
+}
+
 table {
     width: 50%;
     border-collapse: collapse;
@@ -77,6 +81,7 @@ table td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
+    transition: background-color 0.5s ease;
 }
 
 table th {
@@ -161,7 +166,7 @@ footer iframe {
 
 
 /*Estilos responsivos para móviles*/
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     header h1 {
         font-size: 2em;
     }
@@ -200,5 +205,27 @@ footer iframe {
 
     footer iframe {
         height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    #introduccion, #agenda, #registro {
+        margin: 15px;
+    }
+
+    #agenda table {
+        font-size: 0.9em;
+    }
+
+    form input, form select, form button {
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 0.9em;
     }
 }
