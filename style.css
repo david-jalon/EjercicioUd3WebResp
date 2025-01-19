@@ -1,19 +1,19 @@
 /*Mágenes y pagging*/
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /*Estilos para el cuerpo*/
-body{
+body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
 
 /*Cabecera*/
-header{
+header {
     /*background-color: #0065ef;*/
     /*background: linear-gradient(to right, #86a8e7, #0065ef, #86a8e7);*/
     background: linear-gradient(to right, #0065ef, #86a8e7);
@@ -22,16 +22,16 @@ header{
     padding: 20px;
 }
 
-header h1{
+header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-header p{
+header p {
     font-size: 1.2em;
 }
 
-header img{
+header img {
     width: 150px;
     margin-top: 10px;
 }
@@ -48,12 +48,12 @@ main {
     margin-bottom: 40px;
 }
 
-#introduccion h2{
+#introduccion h2 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-#introduccion p{
+#introduccion p {
     font-size: 1.1em;
 }
 
@@ -62,7 +62,7 @@ main {
     margin-bottom: 40px;
 }
 
-#agenda h2{
+#agenda h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -72,7 +72,8 @@ table {
     border-collapse: collapse;
 }
 
-table th, table td {
+table th,
+table td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
@@ -85,10 +86,11 @@ table th {
 
 /*Seccion Registro*/
 #registro {
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
-#registro h2{
+#registro h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -104,7 +106,8 @@ form label {
     font-size: 1.1em;
 }
 
-form input, form button {
+form input,
+form button {
     padding: 10px;
     margin-bottom: 20px;
     font-size: 1em;
@@ -151,15 +154,15 @@ footer a:hover {
     text-decoration: underline;
 }
 
-footer iframe{
+footer iframe {
     width: 100%;
     height: 300px;
 }
 
 
 /*Estilos responsivos para móviles*/
-@media (max-width: 768px){
-    header h1{
+@media (max-width: 600px) {
+    header h1 {
         font-size: 2em;
     }
 
@@ -167,19 +170,35 @@ footer iframe{
         font-size: 1em;
     }
 
-    #introduccion h2, #agenda h2, #registro h2 {
+    #agenda table {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    #introduccion h2,
+    #agenda h2,
+    #registro h2 {
         font-size: 1.5em;
     }
 
-    table th, table td {
+    table th,
+    table td {
         font-size: 0.95em;
     }
 
-    form label, form input, form select, form button {
+    table tr {
+        width: 100%;
+
+    }
+
+    form label,
+    form input,
+    form select,
+    form button {
         font-size: 1em;
     }
 
-    footer iframe{
+    footer iframe {
         height: 200px;
     }
 }
