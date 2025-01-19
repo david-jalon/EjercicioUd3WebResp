@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!---Proyecto de Web responsiva hecho por David Jalón-->
+<!---Práctica de unidad 3-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envento de programación U-tad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---Cabecera--->
+    <header>
+        <h1>Evento de Programación U-tad</h1>
+        <p>Fecha: 25 de Febrero de 2025 | Ubicación: U-tad, Madrid</p>
+        <img src="img/logo_utad.png">
+    </header>
+
+    <!---Cuerpo principal -->
+    <main>
+        <!---Introducción-->
+        <section id="introduccion">
+            <h2>Bienvenidos al evento</h2>
+            <p>Bienvenidos al Evento de Programación U-tad. Estamos encantados de contar con su presencia en esta
+                jornada única llena de aprendizaje, innovación y colaboración. A lo largo del día, tendrán la
+                oportunidad de sumergirse en charlas y talleres impartidos por expertos en el campo de la programación y
+                el desarrollo tecnológico. Este evento está diseñado para ofrecerles conocimientos prácticos,
+                herramientas útiles y la posibilidad de interactuar con otros apasionados de la tecnología. Aprovechen
+                al máximo esta oportunidad para aprender, hacer preguntas y compartir experiencias. ¡Estamos seguros de
+                que será una experiencia enriquecedora para todos!</p>
+        </section>
+
+        <!---Agenda--->
+        <section id="agenda">
+            <h2>Agenda del Evento</h2>
+            <table>
+                <tr>
+                    <th>Hora</th>
+                    <th>Ponente</th>
+                    <th>Título</th>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Juan Pérez</td>
+                    <td>Introducción a la programación</td>
+                </tr>
+                <tr>
+                    <td>11:15 - 12:15</td>
+                    <td>Andrei Marin</td>
+                    <td>Desarrollo Web con HTML y CSS</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 13:30</td>
+                    <td>David Jalón</td>
+                    <td>Cómo no morir estudiando programación</td>
+                </tr>
+            </table>
+        </section>
+
+        <!---Registro-->
+        <section id="registro">
+            <h2>Regístrate para el Evento</h2>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Coreo electrónico</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="charlas">Selección de charlas/talleres</label>
+                <select id="charlas" name="charlas">
+                    <option value="charla1">Introducción a la programación</option>
+                    <option value="charla2">Desarrollo Web con HTML y CSS</option>
+                    <option value="charla3">Cómo no morir estudiando programación</option>
+                </select>
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+        <p>Contacto: <a href="mailto:info@utad.com">info@utad.com</a></p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <p>
+            <a href="https://www.facebook.com/utadcentrouniversitario/?locale=es_ES">Facebook</a>
+            <a href="https://x.com/U_tad?mx=2">Twitter(nunca X)</a>
+            <a href="https://www.instagram.com/u_tad/?hl=es">Instagram</a>
+        </p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10075.438503557265!2d-3.895844222614748!3d40.53922767142019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4182c527808345%3A0xd99cf803771e7271!2sU-tad%20%7C%20Centro%20Universitario%20de%20Tecnolog%C3%ADa%20y%20Arte%20Digital!5e1!3m2!1ses!2ses!4v1737222751487!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+</body>
+
+</html>
